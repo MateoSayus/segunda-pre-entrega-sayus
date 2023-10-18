@@ -1,0 +1,725 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family:'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'PT Serif', serif;
+}
+body{
+  width: 100%;
+  background-image: url(../recursos/fotos/fondo-main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 800px;
+  width: 100%;
+}
+/* empieza header */
+header{
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.logo h2{
+  text-transform: uppercase;
+  font-family: 'PT Serif', serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+  padding-right: 50px;
+}
+
+.nav-bar{
+ list-style-type: none;
+}
+.nav-bar a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 0px 15px;
+}
+.nav-bar li{
+  list-style: none;
+  display: inline-block;
+}
+/* termina header */
+
+/* empieza main */
+
+.titulo-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 70px;
+  color: rgba(255, 228, 196, 0.76);
+  text-shadow: #2b2d42 7px 7px 7px;
+}
+main p{
+  text-transform: initial;
+  color: #ECE1DE;
+  font-size: 40px;
+  padding-left: 5px;
+  text-shadow: #2b2d42 5px 5px 5px;
+  font-family: 'PT Serif', serif;
+}
+
+/* termina main */
+
+/* empieza body */
+
+.titulo-productos{
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+  padding: 15px;
+  color: rgba(255, 228, 196, 0.76);
+  text-shadow: #2b2d42 7px 7px 7px;
+  padding: 90px;
+  font-weight: 2000;
+}
+.content{
+  height: 200px;
+  width: 400px;
+  padding: 10px;
+}
+.content h1{
+  text-transform: uppercase;
+  padding: 10px 10px;
+  font-size: 800;
+  text-decoration: underline;
+}
+.content p{
+  font-size: 20px;
+  color: black;
+}
+.contenedor-tarjetas{
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+.contenedor-tarjetas a{
+  text-decoration: none;
+}
+.contenedor-tarjetas h4{
+  text-transform: uppercase;
+  color: #2b2d42;
+  padding-left: 10px;
+  font-family: 'PT Serif', serif;
+  font-size: 30px;
+}
+.contenedor-tarjetas p{
+  padding-left:10px;
+  text-align-last: start;
+  color: #CED3DC;
+  font-size: 20px;
+}
+.tarjetas-1{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background: url(../recursos/fotos/pastas.jpg);
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(60, 135, 185, 0.8);
+  overflow: hidden;
+}
+.contenido{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(1, 1, 7, 0.705);
+  opacity: 0;
+  transition: .5s;
+}
+.contenido h4, a{
+  color: #ffffff;
+  margin: 10px 0;
+  font-family: 'PT Serif', serif;
+  font-size: 600;
+}
+.tarjetas-1 .contenido:hover{
+  opacity: 2;
+}
+.tarjetas-2{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background: url(../recursos/fotos/pizzas.jpg);
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.tarjetas-2 .contenido:hover{
+  opacity: 2;
+}
+.tarjetas-3{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background: url(../recursos/fotos/tartas.jpg);
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.tarjetas-3 .contenido:hover{
+  opacity: 2;
+}
+.tarjetas-4{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background: url(../recursos/fotos/panes.jpg);
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.tarjetas-4 .contenido:hover{
+  opacity: 2;
+}
+.tarjetas-5{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background: url(../recursos/fotos/empanadas.jpg);
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.tarjetas-5 .contenido:hover{
+  opacity: 2;
+}
+.tarjetas-6{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background: url(../recursos/fotos/budines.jpg);
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.tarjetas-6 .contenido:hover{
+  opacity: 2;
+}
+.tarjetas-7{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background: url(../recursos/fotos/facturas.jpg);
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.tarjetas-7 .contenido:hover{
+  opacity: 2;
+}
+.tarjetas-8{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background: url(../recursos/fotos/flanes.jpg);
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.tarjetas-8 .contenido:hover{
+  opacity: 2;
+}
+.button{
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pasta{
+  height: 200px;
+  width: 100%;
+}
+.contacto-contenedor{
+  height: 450px;
+  width: 100%;
+  padding: 10px;
+  background-color: #001011;
+  }
+.contacto-contenedor h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+
+/* termina body */
+
+/* empieza footer */
+footer{
+  width: 100%;
+}
+.contacto{
+  display: flex;
+  justify-content: start;
+}
+.contacto li{
+  font-size: 30px;
+  color: #F7EBE8;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.contacto a{
+  color: blue;
+  font-size: 20px;
+}
+/* termina footer */
+
+/* empieza sobre-nosotros */
+.nos-titulo{
+  padding: 20px 20px;
+}
+.texto{
+  padding: 20px 50px;
+}
+.nos-contenedor{
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2,400px);
+  
+}
+.item-1{
+  background-image: url(../recursos/oficiales/facturas.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid rgb(177, 184, 87);
+  transition: all 0.5s;
+  filter: sepia(100%);
+}
+.item-1:hover{
+  filter: sepia(0%);
+  transform: scale(1.06);
+}
+.item-2{
+  background-image: url(../recursos/oficiales/pan.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid rgb(177, 184, 87);
+  transition: all 0.5s;
+  filter: sepia(100%);
+}
+.item-2:hover{
+  filter: sepia(0%);
+  transform: scale(1.06);
+}
+.item-3{
+  background-image: url(../recursos/oficiales/pizzas.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid rgb(177, 184, 87);
+  transition: all 0.5s;
+  filter: sepia(100%);
+}
+.item-3:hover{
+  filter: sepia(0%);
+  transform: scale(1.06);
+}
+.item-4{
+  background-image: url(../recursos/oficiales/sorrentinos.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid rgb(177, 184, 87);
+  transition: all 0.5s;
+  filter: sepia(100%);
+}
+.item-4:hover{
+  filter: sepia(0%);
+  transform: scale(1.06);
+}
+.item-5{
+  background-image: url(../recursos/oficiales/empanada.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid rgb(177, 184, 87);
+  transition: all 0.5s;
+  filter: sepia(100%);
+}
+.item-5:hover{
+  filter: sepia(0%);
+  transform: scale(1.06);
+}
+.item-6{
+  background-image: url(../recursos/oficiales/ñoquis.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid rgb(177, 184, 87);
+  transition: all 0.5s;
+  filter: sepia(100%);
+}
+.item-6:hover{
+  filter: sepia(0%);
+  transform: scale(1.06);
+}
+.item-7{
+  background-image: url(../recursos/oficiales/flan-banana.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid rgb(177, 184, 87);
+  transition: all 0.5s;
+  filter: sepia(100%);
+}
+.item-7:hover{
+  filter: sepia(0%);
+  transform: scale(1.06);
+}
+.item-8{
+  background-image: url(../recursos/oficiales/tarta4.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid rgb(177, 184, 87);
+  transition: all 0.5s;
+  filter: sepia(100%);
+}
+.item-8:hover{
+  filter: sepia(0%);
+  transform: scale(1.06);
+}
+/* termina sobre-nosotros */
+
+/* empieza productos */
+h1{
+  font-family:'Montserrat', sans-serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.card img{
+  height: 400px;
+  width: 100;
+}
+.body{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 4px 4px;
+}
+/* termina prodcutos */
+
+/* empieza recetas */
+.titulo-recetas{
+  text-transform: uppercase;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tipos-recetas{
+  text-transform: capitalize;
+  padding: 10px;
+  padding-left: 15px;
+  text-decoration: underline;
+  color: #2b2d42;
+  font-family:'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+.content{
+  height: auto;
+  width: 100%;
+}
+.contenedor-recetas-pastas{
+  margin: 20px;
+  height: 500px;
+  width: 96%;
+  border: 5px solid rgba(60, 135, 185, 0.8);
+  border-radius: 7px;
+  background: url(../recursos/productos/recetas-pastas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 3px 5px 5px rgba(60, 135, 185, 0.8);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-recetas-pizzas{
+  margin: 20px;
+  height: 500px;
+  width: 96%;
+  border: 5px solid rgba(60, 135, 185, 0.8);
+  border-radius: 7px;
+  background: url(../recursos/productos/recetas-pizzas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 3px 5px 5px rgba(60, 135, 185, 0.8);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-recetas-tartas{
+  margin: 20px;
+  height: 500px;
+  width: 96%;
+  border: 5px solid rgba(60, 135, 185, 0.8);
+  border-radius: 7px;
+  background: url(../recursos/productos/recetas-tartas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 3px 5px 5px rgba(60, 135, 185, 0.8);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-recetas-pan{
+  margin: 20px;
+  height: 500px;
+  width: 96%;
+  border: 5px solid rgba(60, 135, 185, 0.8);
+  border-radius: 7px;
+  background: url(../recursos/productos/recetas-pizzas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 3px 5px 5px rgba(60, 135, 185, 0.8);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-recetas p{
+  padding: 10px;
+  padding-left: 2px;
+}
+.content ul{
+  padding-left: 20px;
+}
+
+.contenido-recetas-1{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-2{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-3{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-4{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-5{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-6{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-7{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-8{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-9{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-10{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-11{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+ background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-12{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-13{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-14{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+.contenido-recetas-15{
+  margin: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  overflow: hidden;
+}
+/* termina recetas */
+
+/* empieza pagina de contacto */
+.container{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.formulario{
+  background-color: #BBBF69;
+  width: 600px;
+  height: 490px;
+  border: 5px solid #F5F749;
+}
+.formulario h1{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 40px;
+}
+label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+button{
+  background-color: #CED3DC;
+}
+/* termina pagina de contacto */
+
+
+/* media query - celular*/
+@media (max-width: 412px){
+  header{
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  header img{
+    flex-direction: column;
+  }
+}
+
+
+
+
+/* prueba */
+
