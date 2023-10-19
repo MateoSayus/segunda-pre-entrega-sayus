@@ -7,11 +7,7 @@
 }
 body{
   width: 100%;
-  background-image: url(../recursos/fotos/fondo-main.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-color: #BFB5A8;
   height: 800px;
   width: 100%;
 }
@@ -24,13 +20,14 @@ header{
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
 .logo h2{
   text-transform: uppercase;
   font-family: 'PT Serif', serif;
   font-weight: 900;
   font-size: 40px;
-  color: #ffffff;
+  color: #A65D03;
   padding-right: 50px;
 }
 
@@ -51,7 +48,12 @@ header{
 /* termina header */
 
 /* empieza main */
-
+main{
+  background-image: url(../recursos/fotos/fondo-main.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 .titulo-main{
   display: flex;
   align-items: center;
@@ -124,7 +126,7 @@ main p{
   color: #CED3DC;
   font-size: 20px;
 }
-.tarjetas-1{
+.tarjetas{
   margin: 20px;
   height: 300px;
   width: 400px;
@@ -151,98 +153,7 @@ main p{
   font-family: 'PT Serif', serif;
   font-size: 600;
 }
-.tarjetas-1 .contenido:hover{
-  opacity: 2;
-}
-.tarjetas-2{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background: url(../recursos/fotos/pizzas.jpg);
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.tarjetas-2 .contenido:hover{
-  opacity: 2;
-}
-.tarjetas-3{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background: url(../recursos/fotos/tartas.jpg);
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.tarjetas-3 .contenido:hover{
-  opacity: 2;
-}
-.tarjetas-4{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background: url(../recursos/fotos/panes.jpg);
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.tarjetas-4 .contenido:hover{
-  opacity: 2;
-}
-.tarjetas-5{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background: url(../recursos/fotos/empanadas.jpg);
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.tarjetas-5 .contenido:hover{
-  opacity: 2;
-}
-.tarjetas-6{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background: url(../recursos/fotos/budines.jpg);
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.tarjetas-6 .contenido:hover{
-  opacity: 2;
-}
-.tarjetas-7{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background: url(../recursos/fotos/facturas.jpg);
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.tarjetas-7 .contenido:hover{
-  opacity: 2;
-}
-.tarjetas-8{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background: url(../recursos/fotos/flanes.jpg);
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.tarjetas-8 .contenido:hover{
+.tarjetas .contenido:hover{
   opacity: 2;
 }
 .button{
@@ -254,11 +165,19 @@ main p{
   height: 200px;
   width: 100%;
 }
+
+/* termina body */
+
+/* empieza footer */
+footer{
+  width: 100%;
+  background-color: #403C2B;
+}
 .contacto-contenedor{
   height: 450px;
   width: 100%;
   padding: 10px;
-  background-color: #001011;
+  
   }
 .contacto-contenedor h2{
   text-align: center;
@@ -266,13 +185,6 @@ main p{
   font-size: 40px;
   text-decoration: underline;
   color: rgb(255, 255, 255);
-}
-
-/* termina body */
-
-/* empieza footer */
-footer{
-  width: 100%;
 }
 .contacto{
   display: flex;
@@ -423,6 +335,7 @@ h1{
   display: flex;
   justify-content: space-around;
   padding: 4px 4px;
+  background-color: #A65D03;
 }
 /* termina prodcutos */
 
@@ -707,16 +620,105 @@ button{
 
 
 /* media query - celular*/
-@media (max-width: 412px){
+@media (max-width: 320px){
   header{
     height: auto;
+    width: 100%;
     flex-direction: column;
-    align-items: center;
+    padding: 15px;
   }
-  header img{
-    flex-direction: column;
+  header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2px;
+  }
+  .nav-bar a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 0px 3px;
+  }
+  main{
+    width: 100%;
+    height: 150px;
+    text-align: left;
+    
+  }
+  .titulo-main{
+    font-size: 15px;
+    display: inline;
+    text-align: left;
+    
+  }
+  main p{
+    font-size: 15px;
+  }
+  .titulo-productos{
+    font-size: 20px;
+  }
+  .contenedor-tarjetas{
+    height: auto;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+  .tarjetas{
+    width: 300px;
   }
 }
+
+/* Media Query movil */
+
+@media only screen and (min-width: 480px)and (max-width: 768px){
+  /* Sector inicio html */
+  header{
+    width: 100%;
+  }
+  .nav-bar{
+    padding-right: 20px;
+  }
+  .nav-bar ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-bar a{
+    font-size: 13px;
+  }
+
+  main{
+    height: 350px;
+  }
+  .titulo-main{
+    font-size: 25px;
+  }
+  main p{
+    font-size: 20px;
+  }
+  
+  .contenedor-tarjetas{
+    height:auto;
+    display: grid;
+    justify-content: center;
+  }
+  
+  /* sector Nosotros */
+
+  .nos-titulo{
+    font-size: 50px;
+  }
+  .texto{
+    font-size: 20px;
+  }
+  .nos-contenedor{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4,400px);
+  }
+}
+
 
 
 
