@@ -4,6 +4,7 @@
   font-family:'Montserrat', sans-serif;
   font-family: 'Poppins', sans-serif;
   font-family: 'PT Serif', serif;
+  box-sizing: border-box;
 }
 body{
   width: 100%;
@@ -30,16 +31,20 @@ header{
   color: #A65D03;
   padding-right: 50px;
 }
-
+header ul{
+  margin: 0;
+  padding: 0;
+}
 .nav-bar{
  list-style-type: none;
 }
 .nav-bar a{
-  color: #ffffff;
+  color: #BF7E04;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 25px;
   padding: 0px 15px;
+  font-weight: 600;
 }
 .nav-bar li{
   list-style: none;
@@ -172,6 +177,7 @@ main p{
 footer{
   width: 100%;
   background-color: #403C2B;
+  box-sizing: unset;
 }
 .contacto-contenedor{
   height: 450px;
@@ -671,13 +677,15 @@ button{
 
 /* Media Query movil */
 
-@media only screen and (min-width: 480px)and (max-width: 768px){
+@media (max-width: 576px){
   /* Sector inicio html */
   header{
-    width: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
   }
   .nav-bar{
-    padding-right: 20px;
+    padding-right: 30px;
   }
   .nav-bar ul{
     display: flex;
@@ -689,6 +697,7 @@ button{
 
   main{
     height: 350px;
+    width: auto;
   }
   .titulo-main{
     font-size: 25px;
@@ -701,6 +710,21 @@ button{
     height:auto;
     display: grid;
     justify-content: center;
+  }
+  .contacto-contenedor{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .contacto-contenedor li{
+    text-decoration: none;
+  }
+  .contacto-contenedor h2{
+    text-decoration: none;
+    padding: 15px;
   }
   
   /* sector Nosotros */
