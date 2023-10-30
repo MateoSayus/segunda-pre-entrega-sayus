@@ -1,0 +1,132 @@
+.sobre-nos {
+    height: 700px;
+}
+
+.nos-titulo {
+    padding: 20px 20px;
+}
+
+.texto {
+    padding: 20px 50px;
+    text-align: justify;
+}
+
+.nos-contenedor {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 400px);
+}
+
+.item-1 {
+    background-image: url(../recursos/oficiales/facturas.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0.5s;
+    filter: sepia(100%);
+
+    &:hover {
+        filter: sepia(0%);
+        transform: scale(1.06);
+    }
+}
+
+.item-2 {
+    background-image: url(../recursos/oficiales/pan.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0.5s;
+    filter: sepia(100%);
+
+    &:hover {
+        filter: sepia(0%);
+        transform: scale(1.06);
+    }
+}
+
+.item-3 {
+    background-image: url(../recursos/oficiales/pizzas.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0.5s;
+    filter: sepia(100%);
+
+    &:hover {
+        filter: sepia(0%);
+        transform: scale(1.06);
+    }
+}
+
+.item-4 {
+    background-image: url(../recursos/oficiales/sorrentinos.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0.5s;
+    filter: sepia(100%);
+
+    &:hover {
+        filter: sepia(0%);
+        transform: scale(1.06);
+    }
+}
+
+.item-5 {
+    background-image: url(../recursos/oficiales/empanada.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0.5s;
+    filter: sepia(100%);
+
+    &:hover {
+        filter: sepia(0%);
+        transform: scale(1.06);
+    }
+}
+
+.item-6 {
+    background-image: url(../recursos/oficiales/ñoquis.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0.5s;
+    filter: sepia(100%);
+
+    &:hover {
+        filter: sepia(0%);
+        transform: scale(1.06);
+    }
+}
+
+.item-7 {
+    background-image: url(../recursos/oficiales/flan-banana.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0.5s;
+    filter: sepia(100%);
+
+    &:hover {
+        filter: sepia(0%);
+        transform: scale(1.06);
+    }
+}
+
+.item-8 {
+    background-image: url(../recursos/oficiales/tarta4.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0.5s;
+    filter: sepia(100%);
+
+    &:hover {
+        filter: sepia(0%);
+        transform: scale(1.06);
+    }
+}

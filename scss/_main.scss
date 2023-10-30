@@ -1,0 +1,28 @@
+main {
+    background-image: url(../recursos/fotos/fondo-main.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 500px;
+}
+
+.titulo-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 70px;
+    color: rgba(255, 228, 196, 0.76);
+    text-shadow: #2b2d42 7px 7px 7px;
+}
+
+main p {
+    text-transform: initial;
+    color: #ECE1DE;
+    font-size: 40px;
+    padding-left: 5px;
+    text-shadow: #2b2d42 5px 5px 5px;
+    font-family: 'PT Serif', serif;
+}

@@ -1,19 +1,22 @@
-*{
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&family=PT+Serif:ital,wght@0,400;1,700&family=Poppins:wght@300&display=swap");
+* {
   margin: 0px;
   padding: 0px;
-  font-family:'Montserrat', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'PT Serif', serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "PT Serif", serif;
   box-sizing: border-box;
 }
-body{
+
+body {
   width: 100%;
   background-color: #F9F9F9;
   height: 800px;
   width: 100%;
 }
-/* empieza header */
-header{
+
+header {
   height: 80px;
   padding: 10px;
   display: flex;
@@ -23,21 +26,24 @@ header{
   width: 100%;
   background-color: #F9F9F9;
 }
-.logo h2{
+
+.logo h2 {
   text-transform: uppercase;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-weight: 900;
   font-size: 40px;
   padding-right: 50px;
 }
-header ul{
+
+header ul {
   margin: 0;
   padding: 0;
 }
-.nav-bar{
- list-style-type: none;
+
+.nav-bar {
+  list-style-type: none;
 }
-.nav-bar a{
+.nav-bar a {
   color: #A6774E;
   text-decoration: none;
   text-transform: uppercase;
@@ -45,21 +51,20 @@ header ul{
   padding: 0px 15px;
   font-weight: 600;
 }
-.nav-bar li{
+.nav-bar li {
   list-style: none;
   display: inline-block;
 }
-/* termina header */
 
-/* empieza main */
-main{
+main {
   background-image: url(../recursos/fotos/fondo-main.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   height: 500px;
 }
-.titulo-main{
+
+.titulo-main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,20 +75,17 @@ main{
   color: rgba(255, 228, 196, 0.76);
   text-shadow: #2b2d42 7px 7px 7px;
 }
-main p{
+
+main p {
   text-transform: initial;
   color: #ECE1DE;
   font-size: 40px;
   padding-left: 5px;
   text-shadow: #2b2d42 5px 5px 5px;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
 }
 
-            /* termina main */
-
-            /* empieza body */
-
-.titulo-productos{
+.titulo-productos {
   text-align: center;
   font-size: 45px;
   text-transform: uppercase;
@@ -94,28 +96,28 @@ main p{
   font-weight: 2000;
 }
 
-.contenedor-tarjetas{
+.contenedor-tarjetas {
   height: 400px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 5px;
 }
-
-.contenedor-tarjetas h4{
+.contenedor-tarjetas h4 {
   text-transform: uppercase;
   color: #2b2d42;
   padding-left: 10px;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 30px;
 }
-.contenedor-tarjetas p{
-  padding-left:10px;
+.contenedor-tarjetas p {
+  padding-left: 10px;
   text-align-last: start;
   color: #CED3DC;
   font-size: 20px;
 }
-.tarjeta-1{
+
+.tarjeta-1 {
   margin: 20px;
   height: 300px;
   width: 400px;
@@ -126,7 +128,8 @@ main p{
   box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
   overflow: hidden;
 }
-.tarjeta-2{
+
+.tarjeta-2 {
   margin: 20px;
   height: 300px;
   width: 400px;
@@ -137,7 +140,8 @@ main p{
   box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
   overflow: hidden;
 }
-.tarjeta-3{
+
+.tarjeta-3 {
   margin: 20px;
   height: 300px;
   width: 400px;
@@ -148,7 +152,8 @@ main p{
   box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
   overflow: hidden;
 }
-.tarjeta-4{
+
+.tarjeta-4 {
   margin: 20px;
   height: 300px;
   width: 400px;
@@ -159,7 +164,8 @@ main p{
   box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
   overflow: hidden;
 }
-.tarjeta-5{
+
+.tarjeta-5 {
   margin: 20px;
   height: 300px;
   width: 400px;
@@ -170,7 +176,8 @@ main p{
   box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
   overflow: hidden;
 }
-.tarjeta-6{
+
+.tarjeta-6 {
   margin: 20px;
   height: 300px;
   width: 400px;
@@ -181,7 +188,8 @@ main p{
   box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
   overflow: hidden;
 }
-.tarjeta-7{
+
+.tarjeta-7 {
   margin: 20px;
   height: 300px;
   width: 400px;
@@ -192,7 +200,8 @@ main p{
   box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
   overflow: hidden;
 }
-.tarjeta-8{
+
+.tarjeta-8 {
   margin: 20px;
   height: 300px;
   width: 400px;
@@ -203,7 +212,8 @@ main p{
   box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
   overflow: hidden;
 }
-.contenido{
+
+.contenido {
   width: 100%;
   height: 100%;
   display: flex;
@@ -212,84 +222,88 @@ main p{
   justify-content: center;
   background-color: rgba(1, 1, 7, 0.705);
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
-.contenido h4, a{
+.contenido h4 {
   color: #ffffff;
   margin: 10px 0;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 600;
 }
-.tarjeta-1, .contenido:hover{
+
+a {
+  color: #ffffff;
+  margin: 10px 0;
+  font-family: "PT Serif", serif;
+  font-size: 600;
+}
+
+.tarjeta-1,
+.contenido:hover {
   opacity: 2;
 }
-.button{
+
+.button {
   padding: 12px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-
-              /* termina body */
-
-
-              /* empieza footer */
-footer{
+footer {
   width: 100%;
   box-sizing: unset;
 }
 
-.contacto-contenedor{
+.contacto-contenedor {
   height: 350px;
   width: 100%;
   padding: 10px;
-
 }
-
-.contacto-contenedor h2{
+.contacto-contenedor h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 40px;
   text-decoration: underline;
   color: rgb(0, 0, 0);
 }
-.contacto{
+
+.contacto {
   display: flex;
   justify-content: start;
 }
-.contacto li{
+.contacto li {
   font-size: 30px;
   color: #000000;
   list-style: none;
   text-decoration: none;
   text-transform: capitalize;
- 
 }
-.contacto a{
+.contacto a {
   color: blue;
   font-size: 20px;
 }
-/* termina footer */
 
-/* empieza sobre-nosotros */
-.sobre-nos{
- height: 700px;
+.sobre-nos {
+  height: 700px;
 }
-.nos-titulo{
+
+.nos-titulo {
   padding: 20px 20px;
 }
-.texto{
+
+.texto {
   padding: 20px 50px;
   text-align: justify;
 }
-.nos-contenedor{
+
+.nos-contenedor {
   height: auto;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2,400px);
-  
+  grid-template-rows: repeat(2, 400px);
 }
-.item-1{
+
+.item-1 {
   background-image: url(../recursos/oficiales/facturas.jpg);
   background-position: center;
   background-size: cover;
@@ -297,11 +311,12 @@ footer{
   transition: all 0.5s;
   filter: sepia(100%);
 }
-.item-1:hover{
+.item-1:hover {
   filter: sepia(0%);
   transform: scale(1.06);
 }
-.item-2{
+
+.item-2 {
   background-image: url(../recursos/oficiales/pan.jpg);
   background-position: center;
   background-size: cover;
@@ -309,11 +324,12 @@ footer{
   transition: all 0.5s;
   filter: sepia(100%);
 }
-.item-2:hover{
+.item-2:hover {
   filter: sepia(0%);
   transform: scale(1.06);
 }
-.item-3{
+
+.item-3 {
   background-image: url(../recursos/oficiales/pizzas.jpg);
   background-position: center;
   background-size: cover;
@@ -321,11 +337,12 @@ footer{
   transition: all 0.5s;
   filter: sepia(100%);
 }
-.item-3:hover{
+.item-3:hover {
   filter: sepia(0%);
   transform: scale(1.06);
 }
-.item-4{
+
+.item-4 {
   background-image: url(../recursos/oficiales/sorrentinos.jpg);
   background-position: center;
   background-size: cover;
@@ -333,11 +350,12 @@ footer{
   transition: all 0.5s;
   filter: sepia(100%);
 }
-.item-4:hover{
+.item-4:hover {
   filter: sepia(0%);
   transform: scale(1.06);
 }
-.item-5{
+
+.item-5 {
   background-image: url(../recursos/oficiales/empanada.jpg);
   background-position: center;
   background-size: cover;
@@ -345,11 +363,12 @@ footer{
   transition: all 0.5s;
   filter: sepia(100%);
 }
-.item-5:hover{
+.item-5:hover {
   filter: sepia(0%);
   transform: scale(1.06);
 }
-.item-6{
+
+.item-6 {
   background-image: url(../recursos/oficiales/ñoquis.jpg);
   background-position: center;
   background-size: cover;
@@ -357,11 +376,12 @@ footer{
   transition: all 0.5s;
   filter: sepia(100%);
 }
-.item-6:hover{
+.item-6:hover {
   filter: sepia(0%);
   transform: scale(1.06);
 }
-.item-7{
+
+.item-7 {
   background-image: url(../recursos/oficiales/flan-banana.jpg);
   background-position: center;
   background-size: cover;
@@ -369,11 +389,12 @@ footer{
   transition: all 0.5s;
   filter: sepia(100%);
 }
-.item-7:hover{
+.item-7:hover {
   filter: sepia(0%);
   transform: scale(1.06);
 }
-.item-8{
+
+.item-8 {
   background-image: url(../recursos/oficiales/tarta4.jpg);
   background-position: center;
   background-size: cover;
@@ -381,41 +402,12 @@ footer{
   transition: all 0.5s;
   filter: sepia(100%);
 }
-.item-8:hover{
+.item-8:hover {
   filter: sepia(0%);
   transform: scale(1.06);
 }
-/* termina sobre-nosotros */
 
-/* empieza productos */
-h1{
-  font-family:'Montserrat', sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #A6774E;
-  height: 200px;
-  text-shadow: #A6774E 8px 8px 8px;
-}
-.card img{
-  height: 400px;
-  width: 100;
-}
-.body-prod{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 4px 4px;
-  background-color: #F2D399;
-  border-radius: 5px;
-  border: 10px solid white;
-}
-/* termina prodcutos */
-
-/* empieza recetas */
-.titulo-recetas{
+.titulo-recetas {
   text-transform: uppercase;
   font-size: 40px;
   display: flex;
@@ -423,21 +415,23 @@ h1{
   align-items: center;
 }
 
-.tipos-recetas{
+.tipos-recetas {
   text-transform: capitalize;
   padding: 10px;
   padding-left: 15px;
   text-decoration: underline;
   color: #2b2d42;
-  font-family:'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-size: 30px;
 }
-.content{
+
+.content {
   height: auto;
   width: 100%;
 }
-.contenedor-recetas-pastas{
+
+.contenedor-recetas-pastas {
   margin: 20px;
   height: 500px;
   width: 96%;
@@ -453,7 +447,8 @@ h1{
   align-items: center;
   justify-content: center;
 }
-.contenedor-recetas-pizzas{
+
+.contenedor-recetas-pizzas {
   margin: 20px;
   height: 500px;
   width: 96%;
@@ -469,7 +464,8 @@ h1{
   align-items: center;
   justify-content: center;
 }
-.contenedor-recetas-tartas{
+
+.contenedor-recetas-tartas {
   margin: 20px;
   height: 500px;
   width: 96%;
@@ -485,7 +481,8 @@ h1{
   align-items: center;
   justify-content: center;
 }
-.contenedor-recetas-pan{
+
+.contenedor-recetas-pan {
   margin: 20px;
   height: 500px;
   width: 96%;
@@ -501,168 +498,69 @@ h1{
   align-items: center;
   justify-content: center;
 }
-.contenedor-recetas p{
+
+.contenedor-recetas p {
   padding: 10px;
   padding-left: 2px;
 }
-.content ul{
+
+.content ul {
   padding-left: 20px;
 }
 
-.contenido-recetas-1{
+.contenido-recetas-1,
+.contenido-recetas-2,
+.contenido-recetas-3,
+.contenido-recetas-4,
+.contenido-recetas-5,
+.contenido-recetas-6,
+.contenido-recetas-7,
+.contenido-recetas-8,
+.contenido-recetas-9,
+.contenido-recetas-10,
+.contenido-recetas-11,
+.contenido-recetas-12,
+.contenido-recetas-13,
+.contenido-recetas-14,
+.contenido-recetas-15 {
   margin: 20px;
   height: 300px;
   width: 400px;
   border-radius: 5px;
   background-color: #ffffff;
   background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+  box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
   overflow: hidden;
 }
-.contenido-recetas-2{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-3{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-4{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-5{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-6{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-7{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-8{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-9{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-10{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-11{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
- background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-12{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-13{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-14{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-.contenido-recetas-15{
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
-  overflow: hidden;
-}
-/* termina recetas */
 
-/* empieza pagina de contacto */
-.container{
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #A6774E;
+  height: 200px;
+  text-shadow: #A6774E 8px 8px 8px;
+}
+
+.card img {
+  height: 400px;
+  width: 100;
+}
+
+.body-prod {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 4px 4px;
+  background-color: #F2D399;
+  border-radius: 5px;
+  border: 10px solid white;
+}
+
+.container {
   width: 100%;
   height: 800px;
   display: flex;
@@ -672,149 +570,29 @@ h1{
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.formulario{
+
+.formulario {
   background-color: #BBBF69;
   width: 600px;
   height: 490px;
   border: 5px solid #F5F749;
 }
-.formulario h1{
+.formulario h1 {
   text-align: center;
   padding-top: 20px;
   font-size: 40px;
 }
-label, input, textarea {
+
+label,
+input,
+textarea {
   display: block;
   margin-bottom: 10px;
   padding-left: 5px;
 }
-button{
+
+button {
   background-color: #CED3DC;
 }
-/* termina pagina de contacto */
 
-
-/* media query - celular*/
-@media (max-width: 320px){
-  header{
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    padding: 15px;
-  }
-  header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 2px;
-  }
-  .nav-bar a{
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    padding: 0px 3px;
-  }
-  main{
-    width: 100%;
-    height: 150px;
-    text-align: left;
-    
-  }
-  .titulo-main{
-    font-size: 15px;
-    display: inline;
-    text-align: left;
-    
-  }
-  main p{
-    font-size: 15px;
-  }
-  .titulo-productos{
-    font-size: 20px;
-  }
-  .contenedor-tarjetas{
-    height: auto;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-  }
-  .tarjetas{
-    width: 300px;
-  }
-}
-
-/* Media Query movil */
-
-@media (max-width: 576px){
-  /* Sector inicio html */
-  header{
-    width: auto;
-    display: flex;
-    justify-content: center;
-  }
-  .nav-bar{
-    padding-right: 30px;
-  }
-  .nav-bar ul{
-    display: flex;
-    justify-content: space-around;
-  }
-  .nav-bar a{
-    font-size: 13px;
-  }
-
-  main{
-    height: 350px;
-    width: auto;
-  }
-  .titulo-main{
-    font-size: 25px;
-  }
-  main p{
-    font-size: 20px;
-  }
-  
-  .contenedor-tarjetas{
-    height:auto;
-    display: grid;
-    justify-content: center;
-  }
-  .contacto-contenedor{
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-  }
-  .contacto-contenedor li{
-    text-decoration: none;
-  }
-  .contacto-contenedor h2{
-    text-decoration: none;
-    padding: 15px;
-  }
-  
-  /* sector Nosotros */
-
-  .nos-titulo{
-    font-size: 50px;
-  }
-  .texto{
-    font-size: 20px;
-  }
-  .nos-contenedor{
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4,400px);
-  }
-}
-
-
-
-
-
-/* prueba */
-
+/*# sourceMappingURL=estilo.css.map */

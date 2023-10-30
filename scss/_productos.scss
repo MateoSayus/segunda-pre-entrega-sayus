@@ -1,0 +1,26 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A6774E;
+    height: 200px;
+    text-shadow: #A6774E 8px 8px 8px;
+}
+
+.card img {
+    height: 400px;
+    width: 100;
+}
+
+.body-prod {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 4px 4px;
+    background-color: #F2D399;
+    border-radius: 5px;
+    border: 10px solid white;
+}
