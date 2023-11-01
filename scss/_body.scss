@@ -3,8 +3,8 @@
     font-size: 45px;
     text-transform: uppercase;
     padding: 15px;
-    color: #A6774E;
-    text-shadow: #2b2d42 7px 7px 7px;
+    color: #8c2574;
+    
     padding: 90px;
     font-weight: 2000;
 }
@@ -18,7 +18,6 @@
 
     h4 {
         text-transform: uppercase;
-        color: #2b2d42;
         padding-left: 10px;
         font-family: 'PT Serif', serif;
         font-size: 30px;
@@ -32,103 +31,74 @@
     }
 }
 
-.tarjeta-1 {
+.tarjetas {
     margin: 20px;
-    height: 300px;
-    width: 400px;
     border-radius: 5px;
-    background: url(../recursos/fotos/pastas.jpg);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.tarjeta-2 {
-    margin: 20px;
-    height: 300px;
-    width: 400px;
-    border-radius: 5px;
-    background: url(../recursos/fotos/pizzas.jpg);
+#imagen-1{
+    background-image: url(https://img.remediosdigitales.com/0b7f50/lamborghini_revuelto_6/1366_2000.jpeg);
     background-size: cover;
     background-position: center;
-    box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
-    overflow: hidden;
+    width: 300px;
+    height: 400px;
 }
-
-.tarjeta-3 {
-    margin: 20px;
-    height: 300px;
-    width: 400px;
-    border-radius: 5px;
-    background: url(../recursos/fotos/tartas.jpg);
+#imagen-2{
+    background-image: url(https://cdn.motor1.com/images/mgl/kNREB/s1/lamborghini-huracan-sto.jpg);
     background-size: cover;
     background-position: center;
-    box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
-    overflow: hidden;
+    width: 300px;
+    height: 400px;
 }
-
-.tarjeta-4 {
-    margin: 20px;
-    height: 300px;
-    width: 400px;
-    border-radius: 5px;
-    background: url(../recursos/fotos/panes.jpg);
+#imagen-3{
+    background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
     background-size: cover;
     background-position: center;
-    box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
-    overflow: hidden;
+    width: 300px;
+    height: 400px;
 }
-
-.tarjeta-5 {
-    margin: 20px;
-    height: 300px;
-    width: 400px;
-    border-radius: 5px;
-    background: url(../recursos/fotos/empanadas.jpg);
+#imagen-4{
+    background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
     background-size: cover;
     background-position: center;
-    box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
-    overflow: hidden;
+    width: 300px;
+    height: 400px;
 }
-
-.tarjeta-6 {
-    margin: 20px;
-    height: 300px;
-    width: 400px;
-    border-radius: 5px;
-    background: url(../recursos/fotos/budines.jpg);
+#imagen-5{
+    background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
     background-size: cover;
     background-position: center;
-    box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
-    overflow: hidden;
+    width: 300px;
+    height: 400px;
 }
-
-.tarjeta-7 {
-    margin: 20px;
-    height: 300px;
-    width: 400px;
-    border-radius: 5px;
-    background: url(../recursos/fotos/facturas.jpg);
+#imagen-6{
+    background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
     background-size: cover;
     background-position: center;
-    box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
-    overflow: hidden;
+    width: 300px;
+    height: 400px;
 }
-
-.tarjeta-8 {
-    margin: 20px;
-    height: 300px;
-    width: 400px;
-    border-radius: 5px;
-    background: url(../recursos/fotos/flanes.jpg);
+#imagen-7{
+    background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
     background-size: cover;
     background-position: center;
-    box-shadow: 3px 5px 5px rgba(15, 27, 36, 0.8);
-    overflow: hidden;
+    width: 300px;
+    height: 400px;
+}
+#imagen-8{
+    background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
 }
 
 .contenido {
+    
     width: 100%;
     height: 100%;
     display: flex;
@@ -154,7 +124,7 @@ a {
     font-size: 600;
 }
 
-.tarjeta-1,
+.tarjetas,
 .contenido:hover {
     opacity: 2;
 }

@@ -1,36 +1,36 @@
 footer {
     width: 100%;
+    height: 200px;
     box-sizing: unset;
 }
 
-.contacto-contenedor {
-    height: 350px;
-    width: 100%;
-    padding: 10px;
+.titulo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
 
-    h2 {
-        text-align: center;
+    h4 {
         text-transform: uppercase;
-        font-size: 40px;
-        text-decoration: underline;
-        color: rgb(0, 0, 0);
+        color: #8c2574;
     }
 }
 
-.contacto {
+.contacto-iconos {
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
 
-    li {
+    i {
         font-size: 30px;
-        color: #000000;
-        list-style: none;
-        text-decoration: none;
-        text-transform: capitalize;
+        padding: 15px;
     }
+}
 
-    a {
-        color: blue;
-        font-size: 20px;
-    }
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
 }
