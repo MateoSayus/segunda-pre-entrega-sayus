@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&family=PT+Serif:ital,wght@0,400;1,700&family=Poppins:wght@300&display=swap");
 * {
   margin: 0px;
@@ -13,7 +12,6 @@ body {
   width: 100%;
   background-color: #F9F9F9;
   height: 800px;
-  width: 100%;
 }
 
 header {
@@ -25,16 +23,10 @@ header {
   align-items: center;
   width: 100%;
   background-color: #F9F9F9;
+  box-shadow: 0px 5px 6px -1px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px 5px 6px -1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 6px -1px rgba(0, 0, 0, 0.36);
 }
-
-.logo h2 {
-  text-transform: uppercase;
-  font-family: "PT Serif", serif;
-  font-weight: 900;
-  font-size: 40px;
-  padding-right: 50px;
-}
-
 header ul {
   margin: 0;
   padding: 0;
@@ -57,14 +49,13 @@ header ul {
 }
 
 main {
-  background-image: url(../recursos/fotos/fondo-main.jpg);
+  background-image: url(../recursos/img_index/index-main.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 500px;
+  height: 650px;
 }
-
-.titulo-main {
+main h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,13 +66,11 @@ main {
   color: #8c2574;
   text-shadow: #2b2d42 7px 7px 7px;
 }
-
 main p {
   text-transform: initial;
-  color: #ECE1DE;
+  color: white;
   font-size: 40px;
   padding-left: 5px;
-  color: #2b2d42;
   font-family: "PT Serif", serif;
 }
 
@@ -102,17 +91,30 @@ main p {
   justify-content: space-around;
   padding: 5px;
 }
+.contenedor-tarjetas .contenido {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(1, 1, 7, 0.705);
+  opacity: 0;
+  transition: 0.5s;
+}
 .contenedor-tarjetas h4 {
   text-transform: uppercase;
   padding-left: 10px;
+  color: #ffffff;
+  margin: 10px 0;
   font-family: "PT Serif", serif;
   font-size: 30px;
 }
-.contenedor-tarjetas p {
-  padding-left: 10px;
-  text-align-last: start;
-  color: #CED3DC;
-  font-size: 20px;
+.contenedor-tarjetas a {
+  color: #ffffff;
+  margin: 10px 0;
+  font-family: "PT Serif", serif;
+  font-size: 600;
 }
 
 .tarjetas {
@@ -125,61 +127,38 @@ main p {
   justify-content: center;
 }
 
-#imagen-1 {
-  background-image: url(https://img.remediosdigitales.com/0b7f50/lamborghini_revuelto_6/1366_2000.jpeg);
+#imagen-1, #imagen-8, #imagen-7, #imagen-6, #imagen-5, #imagen-4, #imagen-3, #imagen-2 {
+  background-image: url(../recursos/img_index/index-pastas.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 #imagen-2 {
-  background-image: url(https://cdn.motor1.com/images/mgl/kNREB/s1/lamborghini-huracan-sto.jpg);
+  background-image: url(../recursos/img_index/index-tartas.jpg);
 }
 
 #imagen-3 {
-  background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
+  background-image: url(../recursos/img_index/index-panes.jpg);
 }
 
 #imagen-4 {
-  background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
+  background-image: url(../recursos/img_index/index-facturas.jpg);
 }
 
 #imagen-5 {
-  background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
+  background-image: url(../recursos/img_index/index-budin.jpg);
 }
 
 #imagen-6 {
-  background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
+  background-image: url(../recursos/img_index/Index-empanada.jpg);
 }
 
 #imagen-7 {
-  background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
+  background-image: url(../recursos/img_index/index-pizza.jpg);
 }
 
 #imagen-8 {
-  background-image: url(https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp);
-}
-
-.contenido {
-  width: 300px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(1, 1, 7, 0.705);
-  opacity: 0;
-  transition: 0.5s;
-}
-.contenido h4 {
-  color: #ffffff;
-  margin: 10px 0;
-  font-family: "PT Serif", serif;
-  font-size: 600;
-}
-
-a {
-  color: #ffffff;
-  margin: 10px 0;
-  font-family: "PT Serif", serif;
-  font-size: 600;
+  background-image: url(../recursos/img_index/index-flanes.jpg);
 }
 
 .tarjetas,
@@ -229,127 +208,65 @@ footer {
 
 .sobre-nos {
   height: 700px;
+  background: none;
 }
-
-.nos-titulo {
+.sobre-nos h1 {
   padding: 20px 20px;
 }
-
-.texto {
+.sobre-nos p {
   padding: 20px 50px;
   text-align: justify;
+  color: black;
 }
 
 .nos-contenedor {
   height: auto;
-  width: 100%;
+  width: 97%;
+  padding-left: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 400px);
 }
 
-.item-1 {
-  background-image: url(../recursos/oficiales/facturas.jpg);
+.item-1, .item-8, .item-7, .item-6, .item-5, .item-4, .item-3, .item-2 {
+  background-image: url(../recursos/img_nos/img-1.jpg);
   background-position: center;
   background-size: cover;
   border: 3px solid rgb(177, 184, 87);
   transition: all 0.5s;
   filter: sepia(100%);
 }
-.item-1:hover {
+.item-1:hover, .item-8:hover, .item-7:hover, .item-6:hover, .item-5:hover, .item-4:hover, .item-3:hover, .item-2:hover {
   filter: sepia(0%);
   transform: scale(1.06);
 }
 
 .item-2 {
-  background-image: url(../recursos/oficiales/pan.jpg);
-  background-position: center;
-  background-size: cover;
-  border: 3px solid rgb(177, 184, 87);
-  transition: all 0.5s;
-  filter: sepia(100%);
-}
-.item-2:hover {
-  filter: sepia(0%);
-  transform: scale(1.06);
+  background-image: url(../recursos/img_nos/img-2.jpg);
 }
 
 .item-3 {
-  background-image: url(../recursos/oficiales/pizzas.jpg);
-  background-position: center;
-  background-size: cover;
-  border: 3px solid rgb(177, 184, 87);
-  transition: all 0.5s;
-  filter: sepia(100%);
-}
-.item-3:hover {
-  filter: sepia(0%);
-  transform: scale(1.06);
+  background-image: url(../recursos/img_nos/img-3.jpg);
 }
 
 .item-4 {
-  background-image: url(../recursos/oficiales/sorrentinos.jpg);
-  background-position: center;
-  background-size: cover;
-  border: 3px solid rgb(177, 184, 87);
-  transition: all 0.5s;
-  filter: sepia(100%);
-}
-.item-4:hover {
-  filter: sepia(0%);
-  transform: scale(1.06);
+  background-image: url(../recursos/img_nos/img-4.jpg);
 }
 
 .item-5 {
-  background-image: url(../recursos/oficiales/empanada.jpg);
-  background-position: center;
-  background-size: cover;
-  border: 3px solid rgb(177, 184, 87);
-  transition: all 0.5s;
-  filter: sepia(100%);
-}
-.item-5:hover {
-  filter: sepia(0%);
-  transform: scale(1.06);
+  background-image: url(../recursos/img_nos/img-5.jpg);
 }
 
 .item-6 {
-  background-image: url(../recursos/oficiales/ñoquis.jpg);
-  background-position: center;
-  background-size: cover;
-  border: 3px solid rgb(177, 184, 87);
-  transition: all 0.5s;
-  filter: sepia(100%);
-}
-.item-6:hover {
-  filter: sepia(0%);
-  transform: scale(1.06);
+  background-image: url(../recursos/img_nos/img-6.jpg);
 }
 
 .item-7 {
-  background-image: url(../recursos/oficiales/flan-banana.jpg);
-  background-position: center;
-  background-size: cover;
-  border: 3px solid rgb(177, 184, 87);
-  transition: all 0.5s;
-  filter: sepia(100%);
-}
-.item-7:hover {
-  filter: sepia(0%);
-  transform: scale(1.06);
+  background-image: url(../recursos/img_nos/img-7.jpg);
 }
 
 .item-8 {
-  background-image: url(../recursos/oficiales/tarta4.jpg);
-  background-position: center;
-  background-size: cover;
-  border: 3px solid rgb(177, 184, 87);
-  transition: all 0.5s;
-  filter: sepia(100%);
-}
-.item-8:hover {
-  filter: sepia(0%);
-  transform: scale(1.06);
+  background-image: url(../recursos/img_nos/img-8.jpg);
 }
 
 .titulo-recetas {
@@ -485,24 +402,37 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #A6774E;
+  color: #8c2574;
   height: 200px;
-  text-shadow: #A6774E 8px 8px 8px;
+  text-shadow: #8c2574 1px 6px 9px;
 }
 
-.card img {
-  height: 400px;
-  width: 100;
+.contenedor {
+  width: 85%;
+  padding-left: 300px;
 }
-
-.body-prod {
-  width: 100%;
+.contenedor h4 {
   display: flex;
-  justify-content: space-around;
-  padding: 4px 4px;
-  background-color: #F2D399;
-  border-radius: 5px;
-  border: 10px solid white;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #8c2574;
+}
+.contenedor .card {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor img {
+  height: 100%;
+  width: 100%;
+}
+.contenedor h5 {
+  text-transform: capitalize;
+}
+.contenedor a {
+  font-size: 20px;
 }
 
 .container {

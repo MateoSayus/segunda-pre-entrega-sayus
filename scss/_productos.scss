@@ -5,22 +5,40 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #A6774E;
+    color: #8c2574;
     height: 200px;
-    text-shadow: #A6774E 8px 8px 8px;
+    text-shadow: #8c2574 1px 6px 9px;
 }
 
-.card img {
-    height: 400px;
-    width: 100;
-}
+.contenedor {
+    width: 85%;
+    padding-left: 300px;
+    
+    h4 {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 40px;
+        color: #8c2574;
+    }
+    .card{
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
 
-.body-prod {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 4px 4px;
-    background-color: #F2D399;
-    border-radius: 5px;
-    border: 10px solid white;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    h5 {
+        text-transform: capitalize;
+    }
+
+    a {
+        font-size: 20px;
+    }
 }

@@ -1,26 +1,27 @@
 .sobre-nos {
     height: 700px;
-}
+background: none;
+    h1 {
+        padding: 20px 20px;
+    }
 
-.nos-titulo {
-    padding: 20px 20px;
-}
-
-.texto {
-    padding: 20px 50px;
-    text-align: justify;
+    p {
+        padding: 20px 50px;
+        text-align: justify;
+        color: black;
+    }
 }
 
 .nos-contenedor {
     height: auto;
-    width: 100%;
+    width: 97%;
+    padding-left: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 400px);
 }
-
 .item-1 {
-    background-image: url(../recursos/oficiales/facturas.jpg);
+    background-image: url(../recursos/img_nos/img-1.jpg);
     background-position: center;
     background-size: cover;
     border: 3px solid rgb(177, 184, 87);
@@ -34,99 +35,36 @@
 }
 
 .item-2 {
-    background-image: url(../recursos/oficiales/pan.jpg);
-    background-position: center;
-    background-size: cover;
-    border: 3px solid rgb(177, 184, 87);
-    transition: all 0.5s;
-    filter: sepia(100%);
-
-    &:hover {
-        filter: sepia(0%);
-        transform: scale(1.06);
-    }
+    background-image: url(../recursos/img_nos/img-2.jpg);
+    @extend .item-1
 }
 
 .item-3 {
-    background-image: url(../recursos/oficiales/pizzas.jpg);
-    background-position: center;
-    background-size: cover;
-    border: 3px solid rgb(177, 184, 87);
-    transition: all 0.5s;
-    filter: sepia(100%);
-
-    &:hover {
-        filter: sepia(0%);
-        transform: scale(1.06);
-    }
+    background-image: url(../recursos/img_nos/img-3.jpg);
+    @extend .item-1
 }
 
 .item-4 {
-    background-image: url(../recursos/oficiales/sorrentinos.jpg);
-    background-position: center;
-    background-size: cover;
-    border: 3px solid rgb(177, 184, 87);
-    transition: all 0.5s;
-    filter: sepia(100%);
-
-    &:hover {
-        filter: sepia(0%);
-        transform: scale(1.06);
-    }
+    background-image: url(../recursos/img_nos/img-4.jpg);
+    @extend .item-1
 }
 
 .item-5 {
-    background-image: url(../recursos/oficiales/empanada.jpg);
-    background-position: center;
-    background-size: cover;
-    border: 3px solid rgb(177, 184, 87);
-    transition: all 0.5s;
-    filter: sepia(100%);
-
-    &:hover {
-        filter: sepia(0%);
-        transform: scale(1.06);
-    }
+    background-image: url(../recursos/img_nos/img-5.jpg);
+    @extend .item-1
 }
 
 .item-6 {
-    background-image: url(../recursos/oficiales/ñoquis.jpg);
-    background-position: center;
-    background-size: cover;
-    border: 3px solid rgb(177, 184, 87);
-    transition: all 0.5s;
-    filter: sepia(100%);
-
-    &:hover {
-        filter: sepia(0%);
-        transform: scale(1.06);
-    }
+    background-image: url(../recursos/img_nos/img-6.jpg);
+    @extend .item-1
 }
 
 .item-7 {
-    background-image: url(../recursos/oficiales/flan-banana.jpg);
-    background-position: center;
-    background-size: cover;
-    border: 3px solid rgb(177, 184, 87);
-    transition: all 0.5s;
-    filter: sepia(100%);
-
-    &:hover {
-        filter: sepia(0%);
-        transform: scale(1.06);
-    }
+    background-image: url(../recursos/img_nos/img-7.jpg);
+    @extend .item-1
 }
 
 .item-8 {
-    background-image: url(../recursos/oficiales/tarta4.jpg);
-    background-position: center;
-    background-size: cover;
-    border: 3px solid rgb(177, 184, 87);
-    transition: all 0.5s;
-    filter: sepia(100%);
-
-    &:hover {
-        filter: sepia(0%);
-        transform: scale(1.06);
-    }
+    background-image: url(../recursos/img_nos/img-8.jpg);
+    @extend .item-1
 }
