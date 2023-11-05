@@ -26,8 +26,11 @@
         background-color: rgba(1, 1, 7, 0.705);
         opacity: 0;
         transition: .5s;
+        &:hover {
+            opacity: initial;
+        }
     }
-    
+
 
     h4 {
         text-transform: uppercase;
@@ -96,12 +99,6 @@
     background-image: url(../recursos/img_index/index-flanes.jpg);
     @extend #imagen-1
 }
-
-.tarjetas,
-.contenido:hover {
-    opacity: 2;
-}
-
 .button {
     padding: 12px;
     font-family: 'Poppins', sans-serif;

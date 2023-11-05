@@ -1,0 +1,91 @@
+ /* Vista Tablet*/
+ /*768 hasta 1024*/
+
+ @media (max-width:1024px) {
+     /* Header */
+
+ }
+
+ /* Vista Mobile*/
+ /*480 hasta 768*/
+ @media only screen and (min-width: 480px)and (max-width: 768px) {
+
+     /* Header */
+     header {
+         width: auto;
+
+         .nav-bar {
+             ul {
+                 display: flex;
+                 justify-content: space-between;
+             }
+
+             a {
+                 font-size: 13px;
+             }
+         }
+     }
+
+     /* main */
+     main {
+         h1 {
+             font-size: 40px;
+             padding: 0px;
+         }
+
+         p {
+             font-size: 30px;
+         }
+     }
+
+     .contenedor-tarjetas {
+         height: 100%;
+         display: grid;
+         grid-template-columns: repeat(2, 230px);
+         grid-template-rows: repeat(4, 300px);
+     }
+     .contenido {
+        opacity: 1;
+        transition: 0s;
+    }
+    /* Productos*/
+    .titulo{
+        font-size: 40px;
+    }
+    .contenedor {
+        width: 90%;
+        padding-left: 40px;
+        .card{
+            width: 100px;
+        }
+    }
+    /* Sobre-Nos*/
+    .sobre-nos {
+        height: 700px;
+        background: none;
+        overflow: scroll;
+        p {
+            padding: 0px;
+            padding-right: 5px;
+            
+        }
+    }
+    .nos-contenedor{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        padding-left: 0px;
+        grid-template-columns: repeat(2, 240px);
+        grid-template-rows: repeat(4, 300px);
+    }
+    .item-1 {
+        border: 3px solid rgb(177, 184, 87);
+        transition: all 0s;
+        filter: sepia(0%);
+    
+        &:hover {
+            filter: sepia(0%);
+            transform: none;
+        }
+    }
+ }

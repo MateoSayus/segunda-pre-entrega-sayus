@@ -102,6 +102,9 @@ main p {
   opacity: 0;
   transition: 0.5s;
 }
+.contenedor-tarjetas .contenido:hover {
+  opacity: initial;
+}
 .contenedor-tarjetas h4 {
   text-transform: uppercase;
   padding-left: 10px;
@@ -159,11 +162,6 @@ main p {
 
 #imagen-8 {
   background-image: url(../recursos/img_index/index-flanes.jpg);
-}
-
-.tarjetas,
-.contenido:hover {
-  opacity: 2;
 }
 
 .button {
@@ -277,124 +275,6 @@ footer {
   align-items: center;
 }
 
-.tipos-recetas {
-  text-transform: capitalize;
-  padding: 10px;
-  padding-left: 15px;
-  text-decoration: underline;
-  color: #2b2d42;
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-size: 30px;
-}
-
-.content {
-  height: auto;
-  width: 100%;
-}
-
-.contenedor-recetas-pastas {
-  margin: 20px;
-  height: 500px;
-  width: 96%;
-  border: 5px solid rgba(60, 135, 185, 0.8);
-  border-radius: 7px;
-  background: url(../recursos/productos/recetas-pastas.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 3px 5px 5px rgba(60, 135, 185, 0.8);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenedor-recetas-pizzas {
-  margin: 20px;
-  height: 500px;
-  width: 96%;
-  border: 5px solid rgba(60, 135, 185, 0.8);
-  border-radius: 7px;
-  background: url(../recursos/productos/recetas-pizzas.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 3px 5px 5px rgba(60, 135, 185, 0.8);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenedor-recetas-tartas {
-  margin: 20px;
-  height: 500px;
-  width: 96%;
-  border: 5px solid rgba(60, 135, 185, 0.8);
-  border-radius: 7px;
-  background: url(../recursos/productos/recetas-tartas.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 3px 5px 5px rgba(60, 135, 185, 0.8);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenedor-recetas-pan {
-  margin: 20px;
-  height: 500px;
-  width: 96%;
-  border: 5px solid rgba(60, 135, 185, 0.8);
-  border-radius: 7px;
-  background: url(../recursos/productos/recetas-pizzas.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 3px 5px 5px rgba(60, 135, 185, 0.8);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenedor-recetas p {
-  padding: 10px;
-  padding-left: 2px;
-}
-
-.content ul {
-  padding-left: 20px;
-}
-
-.contenido-recetas-1,
-.contenido-recetas-2,
-.contenido-recetas-3,
-.contenido-recetas-4,
-.contenido-recetas-5,
-.contenido-recetas-6,
-.contenido-recetas-7,
-.contenido-recetas-8,
-.contenido-recetas-9,
-.contenido-recetas-10,
-.contenido-recetas-11,
-.contenido-recetas-12,
-.contenido-recetas-13,
-.contenido-recetas-14,
-.contenido-recetas-15 {
-  margin: 20px;
-  height: 300px;
-  width: 400px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  background-size: cover;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
-  overflow: hidden;
-}
-
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
@@ -468,6 +348,83 @@ textarea {
 
 button {
   background-color: #CED3DC;
+}
+
+/* Vista Tablet*/
+/*768 hasta 1024*/
+@media (max-width: 1024px) {
+  /* Header */
+}
+/* Vista Mobile*/
+/*480 hasta 768*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  /* Header */
+  header {
+    width: auto;
+  }
+  header .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .nav-bar a {
+    font-size: 13px;
+  }
+  /* main */
+  main h1 {
+    font-size: 40px;
+    padding: 0px;
+  }
+  main p {
+    font-size: 30px;
+  }
+  .contenedor-tarjetas {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    grid-template-rows: repeat(4, 300px);
+  }
+  .contenido {
+    opacity: 1;
+    transition: 0s;
+  }
+  /* Productos*/
+  .titulo {
+    font-size: 40px;
+  }
+  .contenedor {
+    width: 90%;
+    padding-left: 40px;
+  }
+  .contenedor .card {
+    width: 100px;
+  }
+  /* Sobre-Nos*/
+  .sobre-nos {
+    height: 700px;
+    background: none;
+    overflow: scroll;
+  }
+  .sobre-nos p {
+    padding: 0px;
+    padding-right: 5px;
+  }
+  .nos-contenedor {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding-left: 0px;
+    grid-template-columns: repeat(2, 240px);
+    grid-template-rows: repeat(4, 300px);
+  }
+  .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8 {
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0s;
+    filter: sepia(0%);
+  }
+  .item-1:hover, .item-2:hover, .item-3:hover, .item-4:hover, .item-5:hover, .item-6:hover, .item-7:hover, .item-8:hover {
+    filter: sepia(0%);
+    transform: none;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
