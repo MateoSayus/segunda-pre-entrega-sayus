@@ -2,9 +2,7 @@
     text-align: center;
     font-size: 45px;
     text-transform: uppercase;
-    padding: 15px;
     color: #8c2574;
-
     padding: 90px;
     font-weight: 2000;
 }
@@ -16,6 +14,57 @@
     justify-content: space-around;
     padding: 5px;
 
+    .tarjetas {
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #imagen-1 {
+        background-image: url(../recursos/img_index/index-pastas.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #imagen-2 {
+        background-image: url(../recursos/img_index/index-tartas.jpg);
+        @extend #imagen-1
+    }
+
+    #imagen-3 {
+        background-image: url(../recursos/img_index/index-panes.jpg);
+        @extend #imagen-1
+    }
+
+    #imagen-4 {
+        background-image: url(../recursos/img_index/index-facturas.jpg);
+        @extend #imagen-1
+    }
+
+    #imagen-5 {
+        background-image: url(../recursos/img_index/index-budin.jpg);
+        @extend #imagen-1
+    }
+
+    #imagen-6 {
+        background-image: url(../recursos/img_index/Index-empanada.jpg);
+        @extend #imagen-1
+    }
+
+    #imagen-7 {
+        background-image: url(../recursos/img_index/index-pizza.jpg);
+        @extend #imagen-1
+    }
+
+    #imagen-8 {
+        background-image: url(../recursos/img_index/index-flanes.jpg);
+        @extend #imagen-1
+    }
+
     .contenido {
         width: 400px;
         height: 500px;
@@ -26,6 +75,7 @@
         background-color: rgba(1, 1, 7, 0.705);
         opacity: 0;
         transition: .5s;
+
         &:hover {
             opacity: initial;
         }
@@ -47,59 +97,9 @@
         font-family: 'PT Serif', serif;
         font-size: 600;
     }
-}
 
-.tarjetas {
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#imagen-1 {
-    background-image: url(../recursos/img_index/index-pastas.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#imagen-2 {
-    background-image: url(../recursos/img_index/index-tartas.jpg);
-    @extend #imagen-1
-}
-
-#imagen-3 {
-    background-image: url(../recursos/img_index/index-panes.jpg);
-    @extend #imagen-1
-}
-
-#imagen-4 {
-    background-image: url(../recursos/img_index/index-facturas.jpg);
-    @extend #imagen-1
-}
-
-#imagen-5 {
-    background-image: url(../recursos/img_index/index-budin.jpg);
-    @extend #imagen-1
-}
-
-#imagen-6 {
-    background-image: url(../recursos/img_index/Index-empanada.jpg);
-    @extend #imagen-1
-}
-
-#imagen-7 {
-    background-image: url(../recursos/img_index/index-pizza.jpg);
-    @extend #imagen-1
-}
-
-#imagen-8 {
-    background-image: url(../recursos/img_index/index-flanes.jpg);
-    @extend #imagen-1
-}
-.button {
-    padding: 12px;
-    font-family: 'Poppins', sans-serif;
+    .button {
+        padding: 12px;
+        font-family: 'Poppins', sans-serif;
+    }
 }

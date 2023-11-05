@@ -78,7 +78,6 @@ main p {
   text-align: center;
   font-size: 45px;
   text-transform: uppercase;
-  padding: 15px;
   color: #8c2574;
   padding: 90px;
   font-weight: 2000;
@@ -90,6 +89,41 @@ main p {
   display: flex;
   justify-content: space-around;
   padding: 5px;
+}
+.contenedor-tarjetas .tarjetas {
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-tarjetas #imagen-1, .contenedor-tarjetas #imagen-8, .contenedor-tarjetas #imagen-7, .contenedor-tarjetas #imagen-6, .contenedor-tarjetas #imagen-5, .contenedor-tarjetas #imagen-4, .contenedor-tarjetas #imagen-3, .contenedor-tarjetas #imagen-2 {
+  background-image: url(../recursos/img_index/index-pastas.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.contenedor-tarjetas #imagen-2 {
+  background-image: url(../recursos/img_index/index-tartas.jpg);
+}
+.contenedor-tarjetas #imagen-3 {
+  background-image: url(../recursos/img_index/index-panes.jpg);
+}
+.contenedor-tarjetas #imagen-4 {
+  background-image: url(../recursos/img_index/index-facturas.jpg);
+}
+.contenedor-tarjetas #imagen-5 {
+  background-image: url(../recursos/img_index/index-budin.jpg);
+}
+.contenedor-tarjetas #imagen-6 {
+  background-image: url(../recursos/img_index/Index-empanada.jpg);
+}
+.contenedor-tarjetas #imagen-7 {
+  background-image: url(../recursos/img_index/index-pizza.jpg);
+}
+.contenedor-tarjetas #imagen-8 {
+  background-image: url(../recursos/img_index/index-flanes.jpg);
 }
 .contenedor-tarjetas .contenido {
   width: 400px;
@@ -119,52 +153,7 @@ main p {
   font-family: "PT Serif", serif;
   font-size: 600;
 }
-
-.tarjetas {
-  margin: 20px;
-  border-radius: 5px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#imagen-1, #imagen-8, #imagen-7, #imagen-6, #imagen-5, #imagen-4, #imagen-3, #imagen-2 {
-  background-image: url(../recursos/img_index/index-pastas.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-#imagen-2 {
-  background-image: url(../recursos/img_index/index-tartas.jpg);
-}
-
-#imagen-3 {
-  background-image: url(../recursos/img_index/index-panes.jpg);
-}
-
-#imagen-4 {
-  background-image: url(../recursos/img_index/index-facturas.jpg);
-}
-
-#imagen-5 {
-  background-image: url(../recursos/img_index/index-budin.jpg);
-}
-
-#imagen-6 {
-  background-image: url(../recursos/img_index/Index-empanada.jpg);
-}
-
-#imagen-7 {
-  background-image: url(../recursos/img_index/index-pizza.jpg);
-}
-
-#imagen-8 {
-  background-image: url(../recursos/img_index/index-flanes.jpg);
-}
-
-.button {
+.contenedor-tarjetas .button {
   padding: 12px;
   font-family: "Poppins", sans-serif;
 }
@@ -350,14 +339,8 @@ button {
   background-color: #CED3DC;
 }
 
-/* Vista Tablet*/
-/*768 hasta 1024*/
-@media (max-width: 1024px) {
-  /* Header */
-}
-/* Vista Mobile*/
-/*480 hasta 768*/
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+/* Vista 320px a 375*/
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   /* Header */
   header {
     width: auto;
@@ -367,9 +350,188 @@ button {
     justify-content: space-between;
   }
   header .nav-bar a {
-    font-size: 13px;
+    font-size: 7px;
   }
   /* main */
+  main {
+    width: auto;
+  }
+  main h1 {
+    font-size: 25px;
+    padding: 0px;
+  }
+  main p {
+    font-size: 25px;
+    padding-left: 0px;
+  }
+  .titulo-productos {
+    font-size: 35px;
+    padding: 0px;
+  }
+  .contenedor-tarjetas {
+    height: auto;
+    width: auto;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(1, 320px);
+    grid-template-rows: repeat(4, 320px);
+    padding: 0px;
+  }
+  .contenedor-tarjetas .contenido {
+    width: 600px;
+    opacity: 1;
+    transition: 0s;
+  }
+  /* Productos*/
+  .titulo {
+    font-size: 30px;
+  }
+  .contenedor {
+    width: 93%;
+    padding-left: 0px;
+  }
+  .contenedor .card {
+    width: 80px;
+  }
+  .contenedor h5 {
+    font-size: 15px;
+  }
+  .contenedor a {
+    font-size: 15px;
+  }
+  /* Sobre-Nos*/
+  .sobre-nos {
+    height: 700px;
+    background: none;
+    overflow: scroll;
+  }
+  .sobre-nos p {
+    padding: 0px;
+    padding-right: 5px;
+  }
+  .nos-contenedor {
+    height: 100%;
+    width: 97%;
+    display: grid;
+    padding-left: 0px;
+    grid-template-columns: repeat(1, 320px);
+    grid-template-rows: repeat(8, 300px);
+  }
+  .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8 {
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0s;
+    filter: sepia(0%);
+  }
+  .item-1:hover, .item-2:hover, .item-3:hover, .item-4:hover, .item-5:hover, .item-6:hover, .item-7:hover, .item-8:hover {
+    filter: sepia(0%);
+    transform: none;
+  }
+}
+/* Vista 375px a 425*/
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  /* Header */
+  header {
+    width: 97%;
+  }
+  header .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .nav-bar a {
+    font-size: 10px;
+  }
+  /* main */
+  main h1 {
+    font-size: 30px;
+    padding: 0px;
+  }
+  main p {
+    font-size: 25px;
+  }
+  .titulo-productos {
+    font-size: 35px;
+  }
+  .contenedor-tarjetas {
+    height: auto;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 300px);
+  }
+  .contenedor-tarjetas .contenido {
+    width: 600px;
+    opacity: 1;
+    transition: 0s;
+  }
+  /* Productos*/
+  .titulo {
+    font-size: 30px;
+  }
+  .contenedor {
+    width: 95%;
+    padding-left: 10px;
+  }
+  .contenedor .card {
+    width: 80px;
+  }
+  .contenedor h5 {
+    font-size: 15px;
+  }
+  .contenedor a {
+    font-size: 15px;
+  }
+  /* Sobre-Nos*/
+  .sobre-nos {
+    height: 700px;
+    background: none;
+    overflow: scroll;
+  }
+  .sobre-nos p {
+    padding: 0px;
+    padding-right: 5px;
+    font-size: 20px;
+  }
+  .nos-contenedor {
+    height: 100%;
+    width: 97%;
+    display: grid;
+    justify-content: center;
+    padding-left: 10px;
+    grid-template-columns: repeat(1, 370px);
+    grid-template-rows: repeat(8, 300px);
+  }
+  .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8 {
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0s;
+    filter: sepia(0%);
+  }
+  .item-1:hover, .item-2:hover, .item-3:hover, .item-4:hover, .item-5:hover, .item-6:hover, .item-7:hover, .item-8:hover {
+    filter: sepia(0%);
+    transform: none;
+  }
+  /* Footer */
+  footer {
+    width: 100%;
+  }
+}
+/* Vista Mobile*/
+/*425 hasta 768*/
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  /* Header */
+  header {
+    width: auto;
+  }
+  header .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .nav-bar a {
+    font-size: 11px;
+  }
+  /* main */
+  main {
+    width: auto;
+  }
   main h1 {
     font-size: 40px;
     padding: 0px;
@@ -392,14 +554,15 @@ button {
     font-size: 40px;
   }
   .contenedor {
-    width: 90%;
-    padding-left: 40px;
+    width: 93%;
+    padding-left: 0px;
   }
   .contenedor .card {
-    width: 100px;
+    width: 110px;
   }
   /* Sobre-Nos*/
   .sobre-nos {
+    width: auto;
     height: 700px;
     background: none;
     overflow: scroll;
@@ -410,11 +573,89 @@ button {
   }
   .nos-contenedor {
     height: 100%;
+    width: auto;
+    display: grid;
+    padding-left: 0px;
+    grid-template-columns: repeat(2, 210px);
+    grid-template-rows: repeat(4, 300px);
+  }
+  .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8 {
+    border: 3px solid rgb(177, 184, 87);
+    transition: all 0s;
+    filter: sepia(0%);
+  }
+  .item-1:hover, .item-2:hover, .item-3:hover, .item-4:hover, .item-5:hover, .item-6:hover, .item-7:hover, .item-8:hover {
+    filter: sepia(0%);
+    transform: none;
+  }
+}
+/* Vista Tablet*/
+/*768 hasta 1023*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Header */
+  header {
+    width: 100%;
+  }
+  header .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .nav-bar a {
+    font-size: 20px;
+  }
+  /* main */
+  main h1 {
+    font-size: 50px;
+    padding: 0px;
+  }
+  main p {
+    font-size: 35px;
+  }
+  .contenedor-tarjetas {
+    height: 100%;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(2, 400px);
+  }
+  .contenedor-tarjetas .tarjetas {
+    width: 300px;
+  }
+  .contenedor-tarjetas .contenido {
+    opacity: 1;
+    transition: 0s;
+  }
+  /* Productos*/
+  .titulo {
+    font-size: 50px;
+  }
+  .contenedor {
+    width: 97%;
+    padding-left: 40px;
+  }
+  .contenedor .card {
+    width: 100px;
+  }
+  /* Sobre-Nos*/
+  .sobre-nos {
+    height: 700px;
+    width: 100%;
+    background: none;
+    overflow: auto;
+  }
+  .sobre-nos p {
+    padding: 0px;
+    padding-right: 0px;
+    font-size: 30px;
+  }
+  .nos-contenedor {
+    height: 100%;
     width: 100%;
     display: grid;
     padding-left: 0px;
-    grid-template-columns: repeat(2, 240px);
+    grid-template-columns: repeat(3, 255px);
     grid-template-rows: repeat(4, 300px);
+    padding-left: 2px;
   }
   .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8 {
     border: 3px solid rgb(177, 184, 87);
