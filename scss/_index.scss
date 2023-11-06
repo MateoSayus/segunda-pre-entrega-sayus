@@ -1,6 +1,7 @@
 .titulo-productos {
     text-align: center;
     font-size: 45px;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     color: #8c2574;
     padding: 90px;
@@ -75,6 +76,7 @@
         background-color: rgba(1, 1, 7, 0.705);
         opacity: 0;
         transition: .5s;
+        font-family: 'Poppins', sans-serif;
 
         &:hover {
             opacity: initial;
@@ -87,14 +89,14 @@
         padding-left: 10px;
         color: #ffffff;
         margin: 10px 0;
-        font-family: 'PT Serif', serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 30px;
     }
 
     a {
         color: #ffffff;
         margin: 10px 0;
-        font-family: 'PT Serif', serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 600;
     }
 
