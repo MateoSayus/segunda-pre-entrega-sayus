@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  height: 80px;
+  height: 100px;
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -31,9 +31,6 @@ header ul {
   padding: 0;
 }
 
-.navbar-nav {
-  padding-top: 70px;
-}
 .navbar-nav .nav-link {
   text-decoration: none;
   text-transform: uppercase;
@@ -356,28 +353,25 @@ h1 {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
-.formulario {
+.container .formulario {
   background-color: #BBBF69;
   width: 600px;
   height: 490px;
   border: 5px solid #F5F749;
 }
-.formulario h1 {
+.container .formulario h1 {
   text-align: center;
   padding-top: 20px;
   font-size: 40px;
 }
-
-label,
-input,
-textarea {
+.container .formulario label,
+.container .formulario input,
+.container .formulario textarea {
   display: block;
   margin-bottom: 10px;
   padding-left: 5px;
 }
-
-button {
+.container .formulario button {
   background-color: #CED3DC;
 }
 
@@ -386,6 +380,9 @@ button {
   /* Header */
   header {
     width: auto;
+  }
+  header .navbar-nav {
+    padding-top: 70px;
   }
   /* main */
   main {
@@ -581,6 +578,9 @@ button {
   /* Header */
   header {
     width: auto;
+  }
+  header .navbar-nav {
+    padding-top: 70px;
   }
   header .nav-bar ul {
     display: flex;

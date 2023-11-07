@@ -1,5 +1,5 @@
 header {
-    height: 80px;
+    height: 100px;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -17,8 +17,7 @@ header {
     }
 }
 
-.navbar-nav{
-    padding-top: 70px;
+.navbar-nav {
 
     .nav-link {
         text-decoration: none;
