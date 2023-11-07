@@ -13,17 +13,6 @@
      /* Header */
      header {
          width: auto;
-
-         .nav-bar {
-             ul {
-                 display: flex;
-                 justify-content: space-between;
-             }
-
-             a {
-                 font-size: 7px;
-             }
-         }
      }
 
      /* main */
@@ -60,8 +49,8 @@
              transition: 0s;
          }
 
-     }
-
+         
+    }
 
      /* Productos*/
      .titulo {
@@ -69,7 +58,7 @@
      }
 
      .contenedor {
-         width: 93%;
+         width: 88%;
          padding-left: 0px;
 
          .card {
@@ -117,6 +106,19 @@
              transform: none;
          }
      }
+     /*  Recetas  */
+     .titulo-recetas {
+        font-size: 28px;
+    }
+    .recetas {
+        display: grid;
+        grid-template-columns: repeat(1,250px);
+        grid-template-rows: repeat(4, auto);
+        flex-direction: row;
+        .receta{
+            width: 97%;
+        }
+    }
      
  }
 
@@ -177,7 +179,7 @@
      }
 
      .contenedor {
-         width: 95%;
+         width: 92%;
          padding-left: 10px;
 
          .card {
@@ -192,6 +194,7 @@
              font-size: 15px;
          }
      }
+
 
      /* Sobre-Nos*/
      .sobre-nos {
@@ -226,6 +229,19 @@
              transform: none;
          }
      }
+      /*  Recetas  */
+      .titulo-recetas {
+        font-size: 30px;
+    }
+    .recetas {
+        display: grid;
+        grid-template-columns: repeat(1,280px);
+        grid-template-rows: repeat(4, auto);
+        flex-direction: row;
+        .receta{
+            width: 97%;
+        }
+    }
      /* Footer */
      footer{
         width: 100%;
@@ -326,6 +342,23 @@
             transform: none;
         }
     }
+       /*  Recetas  */
+       .titulo-recetas {
+        font-size: 40px;
+    }
+    .recetas {
+        display: grid;
+        grid-template-columns: repeat(1,400px);
+        grid-template-rows: repeat(4, auto);
+        flex-direction: row;
+        .receta{
+            width: 97%;
+        }
+    }
+     /* Footer */
+     footer{
+        width: 100%;
+     }
 }
 
 
@@ -432,4 +465,21 @@
             transform: none;
         }
     }
+        /*  Recetas  */
+        .titulo-recetas {
+            font-size: 40px;
+        }
+        .recetas {
+            display: grid;
+            grid-template-columns: repeat(1,500px);
+            grid-template-rows: repeat(4, auto);
+            flex-direction: row;
+            .receta{
+                width: 97%;
+            }
+        }
+         /* Footer */
+         footer{
+            width: 100%;
+         }
 }

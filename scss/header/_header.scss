@@ -17,20 +17,14 @@ header {
     }
 }
 
-.nav-bar {
-    list-style-type: none;
+.navbar-nav{
+    padding-top: 70px;
 
-    a {
-        color: #8c2574;
+    .nav-link {
         text-decoration: none;
         text-transform: uppercase;
         font-size: 25px;
         padding: 0px 15px;
         font-weight: 600;
-    }
-
-    li {
-        list-style: none;
-        display: inline-block;
     }
 }

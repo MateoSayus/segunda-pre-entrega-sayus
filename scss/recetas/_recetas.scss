@@ -1,0 +1,56 @@
+.titulo-recetas {
+    text-transform: uppercase;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.recetas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    .receta {
+        width: 600px;
+        height: auto;
+        border-radius: 20px;
+
+
+        h4 {
+            display: flex;
+            justify-content: center;
+            color: #8c2574;
+            font-size: 29px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        p {
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+
+        li {
+            padding-left: 20px;
+            color: #ffffff;
+            list-style-position: inside;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+
+    #img {
+        background-image: url(../recursos/img_recetas/img-tarjetas.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+    }
+}
